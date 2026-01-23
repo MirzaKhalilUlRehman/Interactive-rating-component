@@ -7,22 +7,23 @@ body{
     background-color: rgb(20 21 25);
     color: rgb(250 254 254);
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 .container{
-    width: 400px;
-    height: 340px;
+    width: 100%;
+    max-width: 340px;
     background-color: rgb(31 38 48);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 15px;
-    padding: 30px;
+    padding: clamp(20px, 5vw, 30px);
 }
 .icon-star{
-    width: 40px;
-    height: 40px;
-    margin-bottom: 25px;
+    width: clamp(35px, 8vw, 40px);
+    height: clamp(35px, 8vw, 40px);
+    margin-bottom: clamp(20px, 4vw, 25px);
     background-color: rgb(38 47 56);
     display: flex;
     justify-content: center;
@@ -30,31 +31,33 @@ body{
     border-radius: 50%;
 }
 h1{
-    font-size: 25px;
+    font-size: clamp(20px, 5vw, 25px);
     font-weight: 700;
     margin-bottom: 5px;
 }
 p{
     color: rgb(110 119 128);
-    font-size: 14px;
-    line-height: 18px;
+    font-size: clamp(13px, 3vw, 14px);
+    line-height: 1.5;
 }
 .btn-container{
     width: 100%;
-    margin-top: 20px;
+    margin-top: clamp(15px, 4vw, 20px);
     display: flex;
     justify-content: space-around;
+    gap: clamp(8px, 2vw, 12px);
 }
 .star-btn{
-    width: 40px;
-    height: 40px;
+    width: clamp(35px, 8vw, 40px);
+    height: clamp(35px, 8vw, 40px);
     border-radius: 50%;
     border: none;
     background-color: rgb(38 47 56);
     color: rgb(110 119 128);
-    font-size: 16px;
+    font-size: clamp(14px, 3vw, 16px);
     cursor: pointer;
     transition: all 0.3s ease;
+    flex-shrink: 0;
 }
 .star-btn:hover{
     background-color: rgb(252 118 19);
@@ -65,13 +68,13 @@ p{
 }
 .sbm-btn{
     width: 100%;
-    height: 40px;
-    margin-top: 20px;
+    height: clamp(35px, 8vw, 40px);
+    margin-top: clamp(15px, 4vw, 20px);
     border-radius: 20px;
     border: none;
     background-color: rgb(252 118 19);
     color: black;
-    font-size: 16px;
+    font-size: clamp(14px, 3vw, 16px);
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
