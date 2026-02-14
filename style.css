@@ -6,8 +6,8 @@
 
 body {
     background-color: #141519;
-    color: #fafefe;
-    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #ffffff;
+    font-family: 'Overpass', -apple-system, BlinkMacSystemFont, sans-serif;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,121 +17,137 @@ body {
 
 .container {
     width: 100%;
-    max-width: 340px;
+    max-width: 410px;
     background-color: #1f2630;
-    border-radius: 15px;
-    padding: clamp(20px, 5vw, 30px);
-    text-align: center; /* Center align all text */
+    border-radius: 30px;
+    padding: 32px 32px 40px 32px;
+    text-align: center;
 }
 
 /* Rating State Styles */
 .icon-star {
-    width: clamp(35px, 8vw, 40px);
-    height: clamp(35px, 8vw, 40px);
-    margin-bottom: clamp(20px, 4vw, 25px);
+    width: 48px;
+    height: 48px;
+    margin-bottom: 30px;
     background-color: #262f38;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    float: left;
 }
 
-h1 {
-    font-size: clamp(20px, 5vw, 25px);
+.rating-state h1 {
+    font-size: 28px;
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: left;
+    clear: left;
 }
 
-p {
-    color: #6e7780;
-    font-size: clamp(13px, 3vw, 14px);
-    line-height: 1.5;
+.rating-state p {
+    color: #959eac;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    text-align: left;
 }
 
 .btn-container {
     width: 100%;
-    margin-top: clamp(15px, 4vw, 20px);
+    margin-bottom: 32px;
     display: flex;
-    justify-content: space-around;
-    gap: clamp(8px, 2vw, 12px);
+    justify-content: space-between;
+    gap: 18px;
 }
 
 .star-btn {
-    width: clamp(35px, 8vw, 40px);
-    height: clamp(35px, 8vw, 40px);
+    width: 51px;
+    height: 51px;
     border-radius: 50%;
     border: none;
     background-color: #262f38;
-    color: #6e7780;
-    font-size: clamp(14px, 3vw, 16px);
+    color: #959eac;
+    font-size: 16px;
+    font-weight: 700;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     flex-shrink: 0;
 }
 
 .star-btn:hover {
     background-color: #fc7613;
-    color: #000000;
+    color: #ffffff;
 }
 
 .star-btn.active {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #7c8798;
+    color: #ffffff;
 }
 
 .sbm-btn {
     width: 100%;
-    height: clamp(35px, 8vw, 40px);
-    margin-top: clamp(15px, 4vw, 20px);
-    border-radius: 20px;
+    height: 45px;
+    border-radius: 30px;
     border: none;
     background-color: #fc7613;
-    color: #000000;
-    font-size: clamp(14px, 3vw, 16px);
+    color: #ffffff;
+    font-size: 15px;
     font-weight: 700;
+    letter-spacing: 2px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
 }
 
 .sbm-btn:hover {
     background-color: #ffffff;
+    color: #fc7613;
 }
 
 /* Thank You State Styles */
 .thank-you-img {
     display: block;
-    margin: 10px auto 20px auto;
-    width: 140px;
+    margin: 14px auto 24px auto;
+    width: 162px;
     height: auto;
 }
 
 .rating {
     background-color: #262f38;
-    color: #fc7613;
-    padding: 8px 15px;
-    border-radius: 20px;
+    padding: 8px 20px;
+    border-radius: 30px;
     display: inline-block;
-    margin: 15px auto 20px auto;
-    font-size: 14px;
+    margin: 0 auto 24px auto;
 }
 
 .rating p {
     color: #fc7613;
+    font-size: 15px;
     margin: 0;
+    font-weight: 400;
 }
 
 .container h1 {
-    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 12px;
     color: #ffffff;
+    letter-spacing: 1px;
 }
 
 .container p {
-    color: #6e7780;
-    margin-bottom: 5px;
-    padding: 0 5px;
+    color: #959eac;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    padding: 0;
 }
 
-/* Add line break for second sentence */
 .container p:last-of-type {
-    margin-top: 10px;
+    margin-top: 0;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
 }
