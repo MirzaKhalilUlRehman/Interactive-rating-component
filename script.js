@@ -28,7 +28,7 @@ smb_btn.addEventListener('click', (e) => {
     
     // Add thank you image
     let img = document.createElement('img');
-    img.src = "assets/illustration-thank-you.svg";
+    img.src = "asserts/illustration-thank-you.svg";
     img.classList.add('thank-you-img');
     container.appendChild(img);
 
