@@ -1,7 +1,6 @@
 let smb_btn = document.querySelector('.sbm-btn');
 let starBtns = document.querySelectorAll('.star-btn');
 let container = document.querySelector('.container');
-let ratingState = document.querySelector('.rating-state');
 let selectedRating = null;
 
 // Add click event to each star button
@@ -29,15 +28,15 @@ smb_btn.addEventListener('click', (e) => {
     
     // Add thank you image
     let img = document.createElement('img');
-    img.src = "asserts/illustration-thank-you.svg";
+    img.src = "assets/illustration-thank-you.svg";
     img.classList.add('thank-you-img');
     container.appendChild(img);
 
     // Add rating badge
     let rating = document.createElement('div');
+    rating.classList.add('rating');
     let rating_text = document.createElement('p');
     rating_text.innerText = `You selected ${selectedRating} out of 5`;
-    rating.classList.add('rating');
     rating.appendChild(rating_text);
     container.appendChild(rating);
 
